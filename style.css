@@ -37,7 +37,7 @@ html {
 
 .logo {
   float: right;
-	font-family:"Have_Heart2";
+	font-family:"Have_Heart";
   font-size: 40px;
   color: white;
   margin-top: 0px;
@@ -111,12 +111,13 @@ h3 {
 
 .blogPost a {
   color: #fff;
+  text-decoration: none;
   transition: 0.3s;
 
 }
 
 .blogPost a:hover {
-  color: #2A2A53;
+  color: #4d4dff;
   transition: 0.3s;
 }
 
