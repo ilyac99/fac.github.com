@@ -103,21 +103,45 @@ h2 {
 h3 {
     text-align: left;
      color: #fff;
-     font-size: 40px;
+     font-size: 50px;
 	   font-family:"Open Sans Condensed";
-     text-decoration:underline;
+  /*   text-decoration:underline; */
 
 }
+
+.blogPost a {
+  color: #fff;
+  transition: 0.3s;
+
+}
+
+.blogPost a:hover {
+  color: #2A2A53;
+  transition: 0.3s;
+}
+
+
 .videoPost {
     margin: 40px;
     color: #fff;
 }
 .blogPost {
 	   margin: 40px;
-       color: #fff;
-
+     font-size 50px;
+     color: #fff;
+     font-family:"bebas";
 
 }
+
+li {
+font-size: 30px;
+}
+
+.blogText {
+font-family:"bebas";
+font-size: 50px;
+}
+
 
 /*///////////////////////Bottom Page////////////*/
 .icon {
