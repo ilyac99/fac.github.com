@@ -93,26 +93,59 @@ body {
 	margin: 0px;
 }
 
+.apuImage{
+  align: center;
+}
+.apuImage img {
+margin: auto;
+max-width: 90%;
+display: block;
+}
+
 h2 {
+  display:block;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-	color: #fff;
+	/*color: #fff;*/
 	font-size: 50px;
 	font-family:"Open Sans Condensed";
-
+  animation: rainbow 3s linear;
+	animation-iteration-count: infinite;
 }
+
+@media (max-width: 480px){
+h2{font-size: 40px;}
+}
+
+
+
 h3 {
     text-align: left;
-     color: #fff;
+     color: #D22B2B;
+     margin-bottom: 20px;
      font-size: 50px;
 	   font-family:"Open Sans Condensed";
-  /*   text-decoration:underline; */
+     text-decoration:underline;
 
 }
 
-.blogPost a {
+.blogPost {
+	   margin: 40px;
+     margin-left: 75px;
+     font-size 50px;
+     color: #fff;
+     font-family:"bebas";
+}
+
+
+
+.blogPost a{
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
+  text-align: center;
 
 }
 
@@ -120,27 +153,58 @@ h3 {
   color: #4d4dff;
   transition: 0.3s;
 }
+/*//////////////////////////////*/
+@media (max-width: 480px){
+.blogPost{
+  display: block;
+  margin: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
 
+.blogPost a{
+  font-size: 30px;
+}
 
+}
+/*///////////////////////////*/
 .videoPost {
     margin: 40px;
     color: #fff;
 }
-.blogPost {
-	   margin: 40px;
-     font-size 50px;
-     color: #fff;
-     font-family:"bebas";
 
+.wlcm {
+display: block;
+margin-top: 0px;
+margin-bottom: 0px;
+color: #fff;
+font-size: 20px;
+text-align: center;
+}
+.wlcm p {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+@media (max-width: 480px){
+.wlcm{font-size: 15px;}
 }
 
 li {
 font-size: 30px;
 }
 
+li::marker{
+margin-right: 10px;
+}
+
 .blogText {
 font-family:"bebas";
 font-size: 50px;
+}
+
+@media (max-width: 480px){
+
 }
 
 /*///////*/
@@ -171,13 +235,53 @@ font-size: 50px;
   color: white;
   text-align: center;
   padding-top: 18px;
+  padding-bottom: 18px;
   margin:0px;
 }
 .bottomMessage {
-	         color: #fff;
+	         color: #818589;
 		       text-align: center;
            font-family:"Roboto";
            font-size:12px;
-           margin:0px;
+           margin:5px;
+           margin-bottom: 50px;
 }
 
+@keyframes rainbow{
+		100%,0%{
+			color: rgb(255,0,0);
+		}
+		8%{
+			color: rgb(255,127,0);
+		}
+		16%{
+			color: rgb(255,255,0);
+		}
+		25%{
+			color: rgb(127,255,0);
+		}
+		33%{
+			color: rgb(0,255,0);
+		}
+		41%{
+			color: rgb(0,255,127);
+		}
+		50%{
+			color: rgb(0,255,255);
+		}
+		58%{
+			color: rgb(0,127,255);
+		}
+		66%{
+			color: rgb(0,0,255);
+		}
+		75%{
+			color: rgb(127,0,255);
+		}
+		83%{
+			color: rgb(255,0,255);
+		}
+		91%{
+			color: rgb(255,0,127);
+		}
+  }
